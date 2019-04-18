@@ -1,0 +1,8 @@
+.calculator-buttons {
+  border-radius: 0px;
+  min-width: 50px;
+  font-size: 18px;
+}
+.btn-secondary:hover {
+  color: orangered;
+}

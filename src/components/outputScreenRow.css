@@ -1,0 +1,8 @@
+.output-screen-row {
+  border: 0px;
+  background-color: #ddd;
+  text-align: right;
+  width: 197px;
+  font-size: 20px;
+  padding-right: 10px;
+}
