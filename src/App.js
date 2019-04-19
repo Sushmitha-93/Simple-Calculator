@@ -52,56 +52,58 @@ class App extends Component {
       <div className="text-center">
         <HeadingComponent />
         <br />
-        <div className="offset-sm-5 calculator border border-secondary rounded">
-          <OutputScreen
-            question={this.state.question}
-            answer={this.state.answer}
-          />
-          <div class="row">
-            <div class="btn-group">
-              <Buttons
-                label={"Clear"}
-                onInputClick={this.handleInputClick}
-                minWidth={75}
-              />
-              <Buttons
-                label={"Delete"}
-                minWidth={74}
-                onInputClick={this.handleInputClick}
-              />
-              <Buttons label={"/"} onInputClick={this.handleInputClick} />
+        <div className="row justify-content-center">
+          <div className="calculator border border-secondary rounded">
+            <OutputScreen
+              question={this.state.question}
+              answer={this.state.answer}
+            />
+            <div class="row">
+              <div class="btn-group">
+                <Buttons
+                  label={"Clear"}
+                  onInputClick={this.handleInputClick}
+                  minWidth={75}
+                />
+                <Buttons
+                  label={"Delete"}
+                  minWidth={74}
+                  onInputClick={this.handleInputClick}
+                />
+                <Buttons label={"/"} onInputClick={this.handleInputClick} />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="btn-group">
-              <Buttons label={"7"} onInputClick={this.handleInputClick} />
-              <Buttons label={"8"} onInputClick={this.handleInputClick} />
-              <Buttons label={"9"} onInputClick={this.handleInputClick} />
-              <Buttons label={"*"} onInputClick={this.handleInputClick} />
+            <div class="row">
+              <div class="btn-group">
+                <Buttons label={"7"} onInputClick={this.handleInputClick} />
+                <Buttons label={"8"} onInputClick={this.handleInputClick} />
+                <Buttons label={"9"} onInputClick={this.handleInputClick} />
+                <Buttons label={"*"} onInputClick={this.handleInputClick} />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="btn-group">
-              <Buttons label={"4"} onInputClick={this.handleInputClick} />
-              <Buttons label={"5"} onInputClick={this.handleInputClick} />
-              <Buttons label={"6"} onInputClick={this.handleInputClick} />
-              <Buttons label={"-"} onInputClick={this.handleInputClick} />
+            <div class="row">
+              <div class="btn-group">
+                <Buttons label={"4"} onInputClick={this.handleInputClick} />
+                <Buttons label={"5"} onInputClick={this.handleInputClick} />
+                <Buttons label={"6"} onInputClick={this.handleInputClick} />
+                <Buttons label={"-"} onInputClick={this.handleInputClick} />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="btn-group">
-              <Buttons label={"1"} onInputClick={this.handleInputClick} />
-              <Buttons label={"2"} onInputClick={this.handleInputClick} />
-              <Buttons label={"3"} onInputClick={this.handleInputClick} />
-              <Buttons label={"+"} onInputClick={this.handleInputClick} />
+            <div class="row">
+              <div class="btn-group">
+                <Buttons label={"1"} onInputClick={this.handleInputClick} />
+                <Buttons label={"2"} onInputClick={this.handleInputClick} />
+                <Buttons label={"3"} onInputClick={this.handleInputClick} />
+                <Buttons label={"+"} onInputClick={this.handleInputClick} />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="btn-group">
-              <Buttons label={"0"} onInputClick={this.handleInputClick} />
-              <Buttons label={"."} onInputClick={this.handleInputClick} />
-              <Buttons label={"="} onInputClick={this.handleInputClick} />
-              <Buttons label={"00"} onInputClick={this.handleInputClick} />
+            <div class="row">
+              <div class="btn-group">
+                <Buttons label={"."} onInputClick={this.handleInputClick} />
+                <Buttons label={"0"} onInputClick={this.handleInputClick} />
+                <Buttons label={"00"} onInputClick={this.handleInputClick} />
+                <Buttons label={"="} onInputClick={this.handleInputClick} />
+              </div>
             </div>
           </div>
         </div>
