@@ -9,7 +9,8 @@ class App extends Component {
     expr: "",
     question: "",
     answer: "",
-    minWidth: 0
+    minWidth: 0,
+    class: ""
   };
 
   handleInputClick = input => {
@@ -52,6 +53,7 @@ class App extends Component {
       <div className="text-center">
         <HeadingComponent />
         <br />
+        {/* To bring content to center */}
         <div className="row justify-content-center">
           <div className="calculator border border-secondary rounded">
             <OutputScreen
@@ -63,14 +65,20 @@ class App extends Component {
                 <Buttons
                   label={"Clear"}
                   onInputClick={this.handleInputClick}
-                  minWidth={75}
+                  minWidth={78}
+                  class={"clear"}
                 />
                 <Buttons
                   label={"Delete"}
-                  minWidth={74}
+                  minWidth={71}
                   onInputClick={this.handleInputClick}
+                  class={"backSpace"}
                 />
-                <Buttons label={"/"} onInputClick={this.handleInputClick} />
+                <Buttons
+                  label={"/"}
+                  onInputClick={this.handleInputClick}
+                  class={"operator"}
+                />
               </div>
             </div>
             <div class="row">
@@ -78,7 +86,11 @@ class App extends Component {
                 <Buttons label={"7"} onInputClick={this.handleInputClick} />
                 <Buttons label={"8"} onInputClick={this.handleInputClick} />
                 <Buttons label={"9"} onInputClick={this.handleInputClick} />
-                <Buttons label={"*"} onInputClick={this.handleInputClick} />
+                <Buttons
+                  label={"*"}
+                  onInputClick={this.handleInputClick}
+                  class={"operator"}
+                />
               </div>
             </div>
             <div class="row">
@@ -86,7 +98,11 @@ class App extends Component {
                 <Buttons label={"4"} onInputClick={this.handleInputClick} />
                 <Buttons label={"5"} onInputClick={this.handleInputClick} />
                 <Buttons label={"6"} onInputClick={this.handleInputClick} />
-                <Buttons label={"-"} onInputClick={this.handleInputClick} />
+                <Buttons
+                  label={"-"}
+                  onInputClick={this.handleInputClick}
+                  class={"operator"}
+                />
               </div>
             </div>
             <div class="row">
@@ -94,7 +110,11 @@ class App extends Component {
                 <Buttons label={"1"} onInputClick={this.handleInputClick} />
                 <Buttons label={"2"} onInputClick={this.handleInputClick} />
                 <Buttons label={"3"} onInputClick={this.handleInputClick} />
-                <Buttons label={"+"} onInputClick={this.handleInputClick} />
+                <Buttons
+                  label={"+"}
+                  onInputClick={this.handleInputClick}
+                  class={"operator"}
+                />
               </div>
             </div>
             <div class="row">

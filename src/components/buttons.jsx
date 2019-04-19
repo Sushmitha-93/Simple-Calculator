@@ -5,7 +5,7 @@ import "./buttons.css";
 const Buttons = props => {
   return (
     <button
-      className="btn btn-secondary calculator-buttons"
+      className={getButtonClass()}
       style={{ minWidth: props.minWidth }}
       onClick={() => {
         props.onInputClick(props.label);
@@ -14,6 +14,12 @@ const Buttons = props => {
       {props.label === "Delete" ? <i class="fas fa-backspace" /> : props.label}
     </button>
   );
+
+  function getButtonClass() {
+    let buttonClass = "btn btn-secondary calculator-buttons ";
+    buttonClass += props.class;
+    return buttonClass;
+  }
 };
 
 export default Buttons;
