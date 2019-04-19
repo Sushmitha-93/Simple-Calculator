@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Sushmitha-93/Simple-Calculator/precache-manifest.9d7793750dbbe84e71a82ddc148e13b9.js"
+  "/Simple-Calculator/precache-manifest.01bf819d26ed6d6ea36b9f9ceae7b428.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Sushmitha-93/Simple-Calculator/index.html", {
+workbox.routing.registerNavigationRoute("/Simple-Calculator/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
