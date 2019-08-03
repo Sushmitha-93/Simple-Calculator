@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+It is a simple app with 3 main components - Heading, Output Screen and Buttons. All these are rendered in App.js. All button clicks are handled by a handleInputClick(input) function which has a switck case to deal with different button clicks.
+
 ## Available Scripts
 
 In the project directory, you can run:
